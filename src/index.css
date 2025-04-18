@@ -1,0 +1,29 @@
+/* index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  /* Remove overflow-x: hidden to prevent clipping */
+}
+
+.glow {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.dish-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dish-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Ensure navbar respects viewport */
+nav {
+  width: 100%;
+  box-sizing: border-box;
+}
